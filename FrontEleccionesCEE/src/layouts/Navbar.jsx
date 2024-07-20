@@ -7,6 +7,8 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
+    setActive(location.pathname.split("/")[1]);
+
     console.log("active", active);
     console.log("location", location.pathname);
   }, [active]);
@@ -15,7 +17,7 @@ const Navbar = () => {
     <>
       <nav className="navbar-top">
         <Link
-          to=""
+          to="/alumnos"
           className="navbar-button"
           onClick={() => {
             setActive("alumnos");
@@ -24,7 +26,7 @@ const Navbar = () => {
           Alumnos
         </Link>
         <Link
-          to=""
+          to="/asambleas"
           className="navbar-button"
           onClick={() => {
             setActive("asambleas");
@@ -32,7 +34,15 @@ const Navbar = () => {
         >
           Asambleas
         </Link>
-
+        <Link
+          to="/logout"
+          className="navbar-button"
+          onClick={() => {
+            setActive("logout");
+          }}
+        >
+          Logout
+        </Link>
         
       </nav>
     </>
