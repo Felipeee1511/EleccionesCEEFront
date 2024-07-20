@@ -1,0 +1,32 @@
+.navbar-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* bottom: 0; */
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #120466;
+  padding: 1em 0;
+}
+.navbar-button {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #120466;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.navbar-button:last-child {
+  margin-bottom: 0; /* Elimina el margen inferior del último botón */
+}
+
+.navbar-button-selected {
+  background-color: #ff0000;
+}
