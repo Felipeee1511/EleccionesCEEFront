@@ -4,6 +4,7 @@ const Alumnos = () => {
 return (
     <>
     <ListAlumnos/>
+    <CreateAlumno/>
     </>
 )
 }

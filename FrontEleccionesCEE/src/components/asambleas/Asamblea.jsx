@@ -4,6 +4,7 @@ const Asamblea = () => {
 return (
     <>
     <ListAsamblea/>
+    <NewAsamblea/>
     </>
 )
 }

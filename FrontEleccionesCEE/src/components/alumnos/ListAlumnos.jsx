@@ -1,3 +1,5 @@
+import '../../styles/components/tables.css';
+
 const ListAlumnos = () => {
 
     return (
